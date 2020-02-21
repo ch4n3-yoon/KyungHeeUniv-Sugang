@@ -4,21 +4,18 @@
 	"version": "0.1",
 	"description": "Hello World!",
 	"permissions": [
-		"activeTab", 
-		"webNavigation",
-		"http://sugang.khu.ac.kr/*"
+		"activeTab",
+		"tabs"
 	],
     "browser_action": {
-    	"default_icon": "images/icon.png",
-    	"default_popup": "popup.html"
+    	"default_icon": "images/icon.png"
     },
     "icons": {
     	"16": "images/favicon.ico"
     },
-    "content_scripts": [{
-    		"matches": ["http://sugang.khu.ac.kr/"],
-    		"run_at": "document_end",
-    		"js": ["exploit.js"],
-    		"all_frames": true
-    }]
+	"background": {
+		"scripts": ["script.js"],
+		"persistent": true
+	}
+
 }
