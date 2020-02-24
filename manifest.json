@@ -5,7 +5,9 @@
 	"description": "Hello World!",
 	"permissions": [
 		"activeTab",
-		"tabs"
+		"tabs",
+		"http://*/",
+		"https://*/"
 	],
     "browser_action": {
     	"default_icon": "images/icon.png"
