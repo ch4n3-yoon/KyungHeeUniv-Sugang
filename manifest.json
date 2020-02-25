@@ -6,7 +6,7 @@
 	"permissions": [
 		"activeTab",
 		"tabs",
-		"http://*/",
+		"http://sugang.khu.ac.kr/",
 		"https://*/"
 	],
     "browser_action": {
